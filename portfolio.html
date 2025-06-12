@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TejxEdit | Tejas Vadar Portfolio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0d1117, #1a1f2e);
+      color: #f5f5f5;
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 80px 20px 40px;
+      background: #0d1117;
+    }
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 3px solid #00bcd4;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      color: #00bcd4;
+    }
+    .intro-box {
+      max-width: 800px;
+      padding: 30px;
+      margin: 20px auto;
+      background-color: #151b29;
+      border: 1px solid #2b2f40;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,188,212,0.2);
+    }
+    .intro-box p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #ddd;
+      margin-bottom: 15px;
+    }
+    .portfolio {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 40px 20px;
+      animation: fadeIn 1s ease-in-out;
+      align-items: center;
+    }
+    .video-card {
+      background: #151b29;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 188, 212, 0.1);
+      width: 90%;
+      max-width: 700px;
+      transition: all 0.3s ease;
+    }
+    .video-card:hover {
+      box-shadow: 0 0 30px rgba(0, 188, 212, 0.3);
+    }
+    .video-card video {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      outline: none;
+    }
+    .video-card h3 {
+      margin: 10px 0 5px;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+    .social {
+      text-align: center;
+      padding: 20px;
+    }
+    .social a {
+      margin: 0 10px;
+      font-size: 1.5rem;
+      color: #00bcd4;
+      transition: color 0.3s;
+    }
+    .social a:hover {
+      color: #ffffff;
+    }
+    .contact {
+      text-align: center;
+      padding: 20px;
+      background-color: #0d1117;
+    }
+    .contact h2 {
+      margin-bottom: 10px;
+    }
+    .contact p, footer {
+      font-size: 1rem;
+      color: #ccc;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0d1117;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    @keyframes fadeIn {
+      0% {opacity: 0; transform: translateY(20px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="profile-img" src="profile.jpg"/>
+    <h1>Tejas Vadar | Video Editor</h1>
+  </header>
+
+  <div class="intro-box">
+    <p>Hi, I'm Tejas Vadar — a passionate video editor who turns raw footage into stories that connect.</p>
+    <p>I specialize in crafting engaging edits for YouTube creators, Instagram influencers, and businesses.</p>
+    <p>From cinematic color grading to fast-paced reels, I bring style, emotion, and clarity to every frame.</p>
+    <p>Whether it’s a brand promo, gym reel, real estate tour, or educational content — I make it stand out.</p>
+    <p>Clean cuts, smooth transitions, and audience-focused edits are my signature.</p>
+    <p>Let’s collaborate and make your vision scroll-stopping and unforgettable.</p>
+    <p>🎥 Your story deserves to be seen — let's edit it to perfection.</p>
+  </div>
+
+  <section class="portfolio">
+    <div class="video-card">
+      <iframe src="https://drive.google.com/file/d/1z5NmlXCNS3pUolqN5MN3uWPw88rBVaPQ/preview" width="100%" height="400" allow="autoplay" allowfullscreen></iframe>
+      <h3>Instagram Edit</h3>
+    </div>
+    <div class="video-card">
+      <iframe src="https://drive.google.com/file/d/10SdbA3TJ3NEeX2gigQCaaQQHe1ZUItLI/preview" width="100%" height="400" allow="autoplay" allowfullscreen></iframe>
+      <h3>Real Estate Edit</h3>
+    </div>
+    <div class="video-card">
+      <iframe src="https://drive.google.com/file/d/1-JfUirjLKEjnsYj0Dhg7NFwuyKRHVyBs/preview" width="100%" height="400" allow="autoplay" allowfullscreen></iframe>
+      <h3>Educational Edit</h3>
+    </div>
+    <div class="video-card">
+      <iframe src="https://drive.google.com/file/d/1theRFp39RJ8qpGZTaSRvyjA0qoXI1WWP/preview" width="100%" height="400" allow="autoplay" allowfullscreen></iframe>
+      <h3>Youtube Edit</h3>
+    </div>
+  </section>
+  
+
+  <div class="social">
+    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="mailto:pixelsbytejas@gmail.com"><i class="fas fa-envelope"></i></a>
+  </div>
+
+  <section class="contact">
+    <h2>Let’s Collaborate</h2>
+    <p>Reach out via <a href="mailto:pixelsbytejas@gmail.com">pixelsbytejas@gmail.com</a> for projects, collabs or freelance gigs.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 TejxEdit. All rights reserved.
+  </footer>
+</body>
+</html>
